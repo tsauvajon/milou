@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified">
+      <!-- XML Schema Generated from XML Document on Thu Oct 26 2017 15:21:48 GMT+0200 (Paris, Madrid (heure d’été)) -->
+      <!-- with XmlGrid.net Free Online Service http://xmlgrid.net -->
+      <xs:element name="carto">
+            <xs:complexType>
+                  <xs:sequence>
+                        <xs:element name="markers">
+                              <xs:complexType>
+                                    <xs:sequence>
+                                          <xs:element name="marker" maxOccurs="unbounded">
+                                                <xs:complexType>
+                                                      <xs:attribute name="name" type="xs:string"></xs:attribute>
+                                                      <xs:attribute name="number" type="xs:int"></xs:attribute>
+                                                      <xs:attribute name="address" type="xs:string"></xs:attribute>
+                                                      <xs:attribute name="fullAddress" type="xs:string"></xs:attribute>
+                                                      <xs:attribute name="lat" type="xs:double"></xs:attribute>
+                                                      <xs:attribute name="lng" type="xs:double"></xs:attribute>
+                                                      <xs:attribute name="open" type="xs:int"></xs:attribute>
+                                                      <xs:attribute name="bonus" type="xs:int"></xs:attribute>
+                                                </xs:complexType>
+                                          </xs:element>
+                                    </xs:sequence>
+                              </xs:complexType>
+                        </xs:element>
+                        <xs:element name="arrondissements">
+                              <xs:complexType>
+                                    <xs:sequence>
+                                          <xs:element name="arrondissement" maxOccurs="unbounded">
+                                                <xs:complexType>
+                                                      <xs:attribute name="number" type="xs:int"></xs:attribute>
+                                                      <xs:attribute name="minLat" type="xs:double"></xs:attribute>
+                                                      <xs:attribute name="minLng" type="xs:double"></xs:attribute>
+                                                      <xs:attribute name="maxLat" type="xs:double"></xs:attribute>
+                                                      <xs:attribute name="maxLng" type="xs:double"></xs:attribute>
+                                                </xs:complexType>
+                                          </xs:element>
+                                    </xs:sequence>
+                              </xs:complexType>
+                        </xs:element>
+                  </xs:sequence>
+            </xs:complexType>
+      </xs:element>
+</xs:schema>
